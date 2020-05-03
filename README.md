@@ -1,4 +1,4 @@
-Based on https://www.digitalocean.com/community/tutorials/how-to-set-up-an-elasticsearch-fluentd-and-kibana-efk-logging-stack-on-kubernetes, but actually working tho
+Based on [digital-ocean-guide](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-elasticsearch-fluentd-and-kibana-efk-logging-stack-on-kubernetes), but actually working tho
 
 ```sh
 gcloud auth login
@@ -16,3 +16,9 @@ k get po
 k port-forward kibanapod 5601:5601
 visit localhost:5601
 ```
+
+Used images
+
+* [Elasticsearch](https://hub.docker.com/_/elasticsearch)
+* [Kibana](https://hub.docker.com/_/kibana)
+* [Fluentd](https://hub.docker.com/r/fluent/fluentd-kubernetes-daemonset)
